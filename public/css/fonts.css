@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "Soehne";
+	src: url("fonts/soehne-buch.woff2");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Soehne";
+	src: url("fonts/soehne-kraftig.woff2");
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "GT Maru Mono";
+	src: url("fonts/gt-maru-mono-regular.woff2");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "GT Maru Bold";
+	src: url("fonts/gt-maru-bold.woff2");
+	font-style: normal;
+	font-weight: 600;
+}

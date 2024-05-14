@@ -1,0 +1,28 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+@media screen and (min-width: 800px) {
+	.container {
+		margin: 0 auto;
+		display: flex;
+	}
+}
+
+.main {
+	grid-column: 1/13;
+}
+
+@media screen and (min-width: 800px) {
+	.main {
+		grid-column: var(--columns-main);
+		min-height: 100vh;
+	}
+
+	.container .main {
+		border-left: var(--border-ui);
+		border-right: var(--border-ui);
+		padding-bottom: 0;
+	}
+}

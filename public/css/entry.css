@@ -1,0 +1,150 @@
+.entry {
+	background: var(--color-post-bg);
+	padding: var(--padding-main);
+	position: relative;
+	border-top: var(--border-ui);
+}
+
+@media screen and (min-width: 800px) {
+	.entry {
+		border-top: none;
+		margin-bottom: 20px;
+	}
+}
+
+.entry:last-child {
+	margin: 0;
+}
+
+.entry a {
+	transition: all 0.2s ease-out;
+	text-decoration-color: var(--color-lighttext);
+	text-decoration-thickness: 2px;
+}
+
+.entry a:hover,
+.entry a:focus {
+	color: var(--color-highlight);
+	text-decoration-color: var(--color-highlight);
+}
+
+.entry p:first-of-type {
+	margin-top: 0;
+}
+
+.entry p em {
+	font-style: normal;
+}
+
+.entry :is(p, ol, ul, blockquote, pre) {
+	margin-block-start: 25px;
+}
+
+.entry *:not(.entry-footer, .entry-footer li, .entry-footer a) {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.entry-full {
+	min-height: 500px;
+}
+
+.entry h1,
+.entry .h1 {
+	font-size: var(--font-size-title);
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.entry h1 a,
+.entry .h1 a {
+	text-decoration: none;
+}
+
+.entry h2 {
+	font-size: var(--font-size-subheading);
+	margin-top: 40px;
+}
+
+.entry p,
+.entry ul,
+.entry ol,
+.entry blockquote {
+	font-size: var(--font-size-text);
+	line-height: 1.5;
+}
+
+.entry-header {
+	margin-bottom: 20px;
+}
+
+.entry-header .h1 {
+	margin-bottom: 5px;
+}
+
+.entry .date {
+	display: block;
+	color: var(--color-highlight);
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: var(--font-subheading);
+}
+
+.entry ul {
+	padding-inline-start: 1.5rem;
+}
+
+.entry ul li {
+	margin-bottom: 0.7rem;
+}
+
+.entry ul li::marker {
+	color: var(--color-highlight);
+	margin: 0 0.5rem 0 0;
+}
+
+.entry-footer {
+	max-width: auto;
+	gap: 10px;
+	list-style: none;
+	padding-inline-start: 0 !important;
+}
+
+.entry-footer li {
+	max-width: auto !important;
+	width: max-content;
+}
+
+.entry-tags {
+	display: flex;
+	gap: 10px;
+	list-style: none;
+	padding: 0 !important;
+}
+
+.entry-tag {
+	font-family: var(--font-subheading);
+	text-transform: uppercase;
+	color: var(--color-lighttext);
+	font-size: 80%;
+	display: flex;
+	background: var(--color-code-block-bg);
+	padding: 5px 10px;
+	gap: 4px;
+	text-decoration: none;
+	border-radius: 5px;
+
+	&:before {
+		content: "#";
+		opacity: 0.5;
+		display: block;
+	}
+
+	&:hover,
+	&:focus {
+		background: var(--color-highlight-dark);
+		color: var(--color-text);
+	}
+}
