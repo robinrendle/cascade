@@ -1,22 +1,45 @@
 ---
+title: The Cascade
 layout: layouts/home.njk
+permalink: "/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber}}/{% endif %}/"
 eleventyNavigation:
   key: Home
   order: 1
-numberOfLatestPostsToShow: 3
+pagination:
+  data: collections.posts
+  size: 15
+  alias: posts
+  reverse: true
 ---
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{%- for post in posts %}
+<article>
+	<h2>
+		<a href="{{ post.url }}">{{ post.data.title }}</a>
+	</h2>
+  {{post.content | safe}}
+</article>
+{%- endfor %}
+
+{% if pagination.href.previous %}
+  <a href="{{pagination.href.previous}}">Previous Page</a>
+{% endif %}
+{% if pagination.href.next %}
+  <a href="{{pagination.href.next}}">Next Page</a>
+{% endif %}
+
+{# {% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %} #}
+{# <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1> #}
+
+{# {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
+{% include "postslist.njk" %} #}
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{# {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
 <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
-{% endif %}
+{% endif %} #}
 
 {# List every content page in the project #}
 {#

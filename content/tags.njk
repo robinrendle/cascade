@@ -10,9 +10,9 @@ pagination:
     - tagList
   addAllPagesToCollections: true
 layout: layouts/home.njk
+permalink: /tags/{{ tag | slugify }}/
 eleventyComputed:
   title: Tagged “{{ tag }}”
-permalink: /tags/{{ tag | slugify }}/
 ---
 <h1>Tagged “{{ tag }}”</h1>
 
