@@ -3,14 +3,16 @@
 	--color-highlight-dark: hsl(337, 68%, 68%);
 	--color-page-bg: hsl(214, 74%, 52%);
 	--color-logo: hsl(29, 100%, 77%);
+	--color-sidebar: hsl(28, 32%, 91%);
 	--color-post-bg: hsl(0, 0%, 100%);
 	--color-inverted-text: hsl(0, 0%, 100%);
 	--color-text: hsl(0, 0%, 13%);
+	--color-sidebar-dark: hsl(31, 30%, 80%);
 	--color-subtext: hsl(0, 0%, 20%);
 	--color-lighttext: hsl(0, 0%, 80%);
 	--color-code-block-bg: hsl(0, 0%, 96%);
-	--border-page: 3px solid var(--color-highlight);
-	--border-ui: 1px solid var(--color-highlight);
+	--border-page: 3px solid var(--color-inverted-text);
+	--border-ui: 1px solid var(--color-text);
 	--font-size-text: clamp(1.05rem, 3vw, 1.15rem);
 	--font-size-title: clamp(1.6rem, 3vw, 1.7rem);
 	--font-size-subheading: clamp(1.2rem, 3vw, 1.4rem);
@@ -22,16 +24,17 @@
 	--font-subheading: "GT Maru Bold", var(--font-fallback);
 	--font-code: "GT Maru Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
 		Menlo, Consolas, "DejaVu Sans Mono", monospace;
-	--columns-sidebar: 10/13;
-	--columns-main: 3/10;
+	--columns-sidebar: 9/13;
+	--columns-main: 1/9;
 	--padding-main: 40px 20px 50px;
 	--padding-sidebar: 10px 10px;
 	--btn-radius: 10px;
+	--header-height: 128px;
 }
 
 @media screen and (min-width: 800px) {
 	:root {
-		--border-page: 9px solid var(--color-highlight);
+		--border-page: 9px solid var(--color-inverted-text);
 		--padding-main: 30px 30px 50px;
 		--padding-sidebar: 20px 20px;
 	}
@@ -39,7 +42,7 @@
 
 @media screen and (min-width: 1000px) {
 	:root {
-		--border-page: 9px solid var(--color-highlight);
+		--border-page: 9px solid var(--color-inverted-text);
 		--padding-main: 40px 40px 50px;
 		--padding-sidebar: 20px 20px;
 	}

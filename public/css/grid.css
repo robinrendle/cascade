@@ -6,7 +6,6 @@
 @media screen and (min-width: 800px) {
 	.container {
 		margin: 0 auto;
-		/* display: flex; */
 	}
 }
 
@@ -25,4 +24,10 @@
 		border-right: var(--border-ui);
 		padding-bottom: 0;
 	}
+}
+
+.container {
+	z-index: 1;
+	border-top: var(--border-ui);
+	margin-top: calc(var(--header-height) - 10px);
 }

@@ -6,8 +6,6 @@ tags:
   - language
 ---
 
-Title: How to display language-specific quotes in CSS
-
 [Stefan Judis](https://www.stefanjudis.com/today-i-learned/how-to-use-language-dependent-quotes-in-css/):
 
 > Quotation characters are language-specific. French, for example, uses « and ». Going all in with double quotes isn't correct and will anger quite some typography nerds (and French people).

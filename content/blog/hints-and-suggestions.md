@@ -2,7 +2,7 @@
 title: Hints and Suggestions
 date: 2024-05-10
 tags:
-  - miriam suzzane
+  - miriam suzanne
   - css is awesome
   - cascade
 ---

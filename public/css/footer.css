@@ -1,5 +1,8 @@
 .footer {
+	background: var(--color-page-bg);
 	border-top: var(--border-ui);
+	border-left: var(--border-ui);
+	border-right: var(--border-ui);
 	padding: 20px;
 }
 

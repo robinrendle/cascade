@@ -1,14 +1,12 @@
 html {
 	border: var(--border-page);
-	border-top: none;
-	background: var(--color-highlight);
 }
 
 body {
 	font-size: 100%;
 	color: var(----color-text);
 	font-family: var(--font-fallback);
-	background: var(--color-page-bg);
+	background: white;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
@@ -50,23 +48,32 @@ body {
 }
 
 .sidebar {
+	background: var(--color-sidebar);
 	display: none;
-	color: var(--color-inverted-text);
+}
+
+.sidebar p {
+	margin-top: 0;
 }
 
 @media screen and (min-width: 800px) {
 	.sidebar {
 		display: block;
+		border-right: var(--border-ui);
 		grid-column: var(--columns-sidebar);
 	}
 }
 
-.sidebar .entries {
+.sidebar-about {
+	margin-bottom: 2rem;
+}
+
+.sidebar-wrapper {
 	padding: var(--padding-sidebar);
 }
 
 @media screen and (min-width: 800px) {
-	.sidebar .entries {
+	.sidebar-wrapper {
 		position: sticky;
 		top: 10px;
 		padding-bottom: 0;
@@ -85,15 +92,15 @@ body {
 	margin-block-start: 10px;
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
+	gap: 0px;
 }
 
 @media screen and (min-width: 800px) {
 	.entries-list {
-		overflow: scroll;
-		height: 100dvh;
+		/* overflow: scroll;
 		-ms-overflow-style: none; /* for Internet Explorer, Edge */
-		scrollbar-width: none; /* for Firefox */
+		/* scrollbar-width: none; */
+		height: 100dvh;
 	}
 
 	.entries-list::-webkit-scrollbar {
@@ -102,16 +109,28 @@ body {
 }
 
 .entries-list a {
-	display: block;
-	width: 100%;
+	font-weight: 400;
+	display: inline-block;
 	text-decoration: none;
-	color: rgba(255, 255, 255, 0.6);
 	transition: 0.3s ease-in-out color;
 	line-height: 1.3;
+	width: auto;
+	border-radius: 5px;
+	position: relative;
+	left: -10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	opacity: 0.85;
 }
 
-.entries-list a:hover {
-	color: rgba(255, 255, 255, 1);
+.entries-list a:hover,
+.entries-list a:focus {
+	font-weight: 600;
+	color: var(--color-text);
+	background: var(--color-sidebar-dark);
+	cursor: pointer;
 }
 
 .nav {

@@ -5,10 +5,13 @@
 	border-top: var(--border-ui);
 }
 
+.entry:first-of-type {
+	border-top: none;
+}
+
 @media screen and (min-width: 800px) {
 	.entry {
-		border-top: none;
-		margin-bottom: 20px;
+		margin-bottom: 0;
 	}
 }
 
@@ -24,8 +27,8 @@
 
 .entry a:hover,
 .entry a:focus {
-	color: var(--color-highlight);
-	text-decoration-color: var(--color-highlight);
+	color: var(--color-text);
+	text-decoration-color: var(--color-text);
 }
 
 .entry p:first-of-type {
@@ -62,6 +65,11 @@
 	text-decoration: none;
 }
 
+.entry h1 a:hover,
+.entry .h1 a:hover {
+	text-decoration: underline;
+}
+
 .entry h2 {
 	font-size: var(--font-size-subheading);
 	margin-top: 40px;
@@ -85,7 +93,7 @@
 
 .entry .date {
 	display: block;
-	color: var(--color-highlight);
+	color: var(--color-page-bg);
 	font-weight: bold;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -123,7 +131,7 @@
 	font-family: var(--font-subheading);
 	text-transform: uppercase;
 	color: var(--color-lighttext);
-	font-size: 75%;
+	font-size: 70%;
 	display: flex;
 	background: var(--color-code-block-bg);
 	padding: 5px 10px;

@@ -6,8 +6,6 @@ tags:
   - design systems
 ---
 
-Title: Invisible success
-
 Eric Bailey has some great thoughts about why it’s [tough to show success on a design systems team](https://ericwbailey.website/published/invisible-success/):
 
 > In a business context, design system work means numbers go down. Less bug reports, faster design iteration, shorter development cycles, fewer visual inconsistencies, smaller staffing requirements that enable folks to work on more interesting challenges, etc. All good things.
