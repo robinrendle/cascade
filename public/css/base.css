@@ -83,8 +83,8 @@ body {
 .sidebar-heading {
 	font-family: var(--font-subheading);
 	font-size: var(--font-size-sidebarheading);
-	margin-top: 0;
-	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
 	color: var(--color-text);
 }
 
@@ -165,7 +165,7 @@ blockquote > *:first-child {
 	display: block;
 	width: 100%;
 	padding: 10px;
-	background: var(--color-highlight);
+	background: var(--color-page-bg);
 	color: var(--color-inverted-text);
 	text-align: center;
 	text-decoration: none;
@@ -175,7 +175,8 @@ blockquote > *:first-child {
 
 .btn-support:hover,
 .btn-support:focus {
-	background: var(--color-highlight-dark);
+	color: var(--color-inverted-text) !important;
+	background: var(--color-highlight);
 }
 
 .cp_embed_wrapper {
@@ -191,4 +192,15 @@ blockquote > *:first-child {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+}
+
+.pagination {
+	display: flex;
+	border-top: var(--border-ui);
+	padding: 20px;
+}
+
+.pagination .next {
+	&:before {
+	}
 }

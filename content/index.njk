@@ -32,12 +32,14 @@ pagination:
 </article>
 {%- endfor %}
 
-{% if pagination.href.previous %}
-  <a href="{{pagination.href.previous}}">Previous Page</a>
-{% endif %}
-{% if pagination.href.next %}
-  <a href="{{pagination.href.next}}">Next Page</a>
-{% endif %}
+<nav class="pagination">
+  {% if pagination.href.previous %}
+    <a href="{{pagination.href.previous}}" class="previous">Previous Page</a>
+  {% endif %}
+  {% if pagination.href.next %}
+    <a href="{{pagination.href.next}}" class="next">Next Page</a>
+  {% endif %}
+</nav>
 
 {# {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %} #}
@@ -46,11 +48,6 @@ pagination:
 {# {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
 {% include "postslist.njk" %} #}
-
-{# {% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
-{% endif %} #}
 
 {# List every content page in the project #}
 {#

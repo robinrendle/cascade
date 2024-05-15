@@ -3,9 +3,9 @@ layout: layouts/base.njk
 ---
 <article class="entry">
 	<div class="entry-header">
-    {%- if date %}
-      <time class="date" datetime="{{ date |    htmlDateString }}">{{ date | readableDate }}</time>
-    {%- endif %}  
+    {% if date %}
+      <time class="date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    {% endif %}  
     <h1 class="h1">{{ title }}</h1>
   </div>
 
