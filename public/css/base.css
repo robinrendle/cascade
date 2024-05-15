@@ -14,37 +14,6 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-code {
-	font-size: var(--font-size-code);
-	line-height: 24px;
-	font-family: var(--font-code) !important;
-	margin: 0;
-	background: var(--color-code-block-bg);
-	border-radius: 3px;
-}
-
-pre code {
-	text-wrap: nowrap !important;
-	overflow-x: scroll !important;
-}
-
-p code {
-	line-height: 1em;
-	padding: 2px;
-	margin-left: -2px;
-	display: inline-block;
-	font-size: 1rem;
-}
-
-pre code {
-	display: block;
-	padding: 12px 18px;
-	margin: 0 0 0 0;
-	background-color: var(--color-code-block-bg);
-	display: block;
-	white-space: pre-wrap;
-}
-
 @media screen and (min-width: 800px) {
 	.container {
 		margin: 0 auto;
@@ -109,7 +78,7 @@ pre code {
 	font-size: var(--font-size-sidebarheading);
 	margin-top: 0;
 	margin-bottom: 5px;
-	color: var(--color-highlight);
+	color: var(--color-text);
 }
 
 .entries-list {
@@ -192,4 +161,15 @@ blockquote > *:first-child {
 
 .cp_embed_wrapper {
 	margin-top: 20px;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
