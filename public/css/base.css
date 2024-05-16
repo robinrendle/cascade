@@ -156,6 +156,11 @@ blockquote > *:first-child {
 	margin-top: 0;
 }
 
+blockquote > *:only-child {
+	margin-top: 0 !important;
+	margin-bottom: 0;
+}
+
 .btn-support {
 	font-family: var(--font-subheading);
 	display: block;
