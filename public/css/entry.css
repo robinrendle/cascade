@@ -49,8 +49,10 @@
 	margin-right: auto;
 }
 
-.entry-full {
-	min-height: 500px;
+@media screen and (max-width: 800px) {
+	.entry-full {
+		height: 100dvh;
+	}
 }
 
 .entry h1,
