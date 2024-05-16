@@ -8,10 +8,7 @@
 .header {
 	overflow: hidden;
 	display: flex;
-	border-top: var(--border-ui);
-	border-right: var(--border-ui);
-	border-left: var(--border-ui);
-	border-bottom: var(--border-ui);
+	border: 0;
 	height: var(--header-height);
 	position: fixed;
 	top: 0;

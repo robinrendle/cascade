@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 800px) {
 	:root {
-		--border-page: 9px solid var(--color-sidebar);
+		--border-page: 9px solid var(--color-page-bg);
 		--padding-main: 30px 30px 50px;
 		--padding-sidebar: 20px 20px;
 		--header-height: 128px;
@@ -43,8 +43,6 @@
 
 @media screen and (min-width: 1000px) {
 	:root {
-		--border-page: 9px solid var(--color-sidebar);
 		--padding-main: 40px 40px 50px;
-		--padding-sidebar: 20px 20px;
 	}
 }

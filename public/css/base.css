@@ -56,6 +56,7 @@ body {
 
 .sidebar p {
 	margin-top: 0;
+	font-size: 120%;
 }
 
 @media screen and (min-width: 800px) {

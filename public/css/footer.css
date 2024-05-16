@@ -1,6 +1,7 @@
 .footer {
-	background: var(--color-page-bg);
+	background: var(--color-highlight);
 	border-top: var(--border-ui);
+	border-bottom: var(--border-ui);
 	border-left: var(--border-ui);
 	border-right: var(--border-ui);
 	padding: 20px;
@@ -25,19 +26,13 @@
 .footer-nav a {
 	font-family: var(--font-subheading);
 	text-decoration: none;
-	color: var(--color-logo);
+	color: var(--color-text);
 	transition: all 0.2s ease-out;
-}
-
-@media screen and (min-width: 800px) {
-	.footer-nav a {
-		color: var(--color-inverted-text);
-	}
 }
 
 .footer-nav a:hover,
 .footer-nav a:focus {
-	color: var(--color-logo);
+	text-decoration: underline;
 }
 
 .footer-about {

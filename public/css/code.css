@@ -40,10 +40,9 @@ pre[class*="language-"] {
 	word-wrap: normal;
 	color: #90a4ae;
 	background: var(--color-code-block-bg);
-	font-family: Roboto Mono, monospace;
-	font-size: 1em;
 	line-height: 1.5em;
 	font-size: 95%;
+	border-radius: 6px;
 
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
@@ -80,7 +79,7 @@ pre[class*="language-"] ::selection {
 pre[class*="language-"] {
 	overflow: auto;
 	position: relative;
-	padding: 1.25em 1em;
+	padding: 0.5em 0.5em;
 }
 
 .language-css > code,
