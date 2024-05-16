@@ -124,7 +124,7 @@ ____,  __, _, ____,    ____,   ____, ____,  ____,   ____, ____,  ____,
 					<div class="entries">
 						<h3 class="sidebar-heading">Table of Contents</h3>
 						<div class="entries-list">
-							{%- for post in collections.posts %}
+							{%- for post in collections.posts | reverse %}
 								<a href="{{ post.url }}">{{ post.data.title }}</a>
 							{%- endfor %}
 						</div>

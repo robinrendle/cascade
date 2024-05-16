@@ -98,13 +98,6 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-	.entries-list {
-		/* overflow: scroll;
-		-ms-overflow-style: none; /* for Internet Explorer, Edge */
-		/* scrollbar-width: none; */
-		height: 100dvh;
-	}
-
 	.entries-list::-webkit-scrollbar {
 		display: none;
 	}
