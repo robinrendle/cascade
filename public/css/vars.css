@@ -22,8 +22,8 @@
 		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
 		sans-serif;
 	--font-subheading: "GT Maru Bold", var(--font-fallback);
-	--font-code: "GT Maru Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
-		Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	--font-code: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+		"DejaVu Sans Mono", monospace;
 	--columns-sidebar: 9/13;
 	--columns-main: 1/9;
 	--padding-main: 40px 10px 50px;
