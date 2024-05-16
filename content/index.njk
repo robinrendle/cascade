@@ -32,14 +32,14 @@ pagination:
 </article>
 {%- endfor %}
 
-<nav class="pagination">
+{# <nav class="pagination">
   {% if pagination.href.previous %}
     <a href="{{pagination.href.previous}}" class="previous">Previous Page</a>
   {% endif %}
   {% if pagination.href.next %}
     <a href="{{pagination.href.next}}" class="next">Next Page</a>
   {% endif %}
-</nav>
+</nav> #}
 
 {# {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %} #}

@@ -1,5 +1,7 @@
 html {
-	border: var(--border-page);
+	@media screen and (min-width: 800px) {
+		border: var(--border-page);
+	}
 }
 
 body {
@@ -48,7 +50,7 @@ body {
 }
 
 .sidebar {
-	background: var(--color-sidebar);
+	background: var(--color-post-bg);
 	display: none;
 }
 
@@ -85,7 +87,7 @@ body {
 	font-size: var(--font-size-sidebarheading);
 	margin-top: 5px;
 	margin-bottom: 10px;
-	color: var(--color-text);
+	color: var(--color-page-bg);
 }
 
 .entries-list {
@@ -129,7 +131,7 @@ body {
 .entries-list a:focus {
 	font-weight: 600;
 	color: var(--color-text);
-	background: var(--color-sidebar-dark);
+	background: var(--color-code-block-bg);
 	cursor: pointer;
 }
 
@@ -200,7 +202,13 @@ blockquote > *:first-child {
 	padding: 20px;
 }
 
-.pagination .next {
-	&:before {
-	}
+h2 .header-anchor {
+	opacity: 0;
+	transition: all 0.3s linear;
+}
+
+h2:hover .header-anchor {
+	opacity: 1;
+	color: var(--color-page-bg);
+	text-decoration: none;
 }

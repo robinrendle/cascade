@@ -1,21 +1,24 @@
 <!doctype html>
 <html lang="{{ metadata.language }}">
-	  <!--
+<!--
+
 ____,  __, _, ____,    ____,   ____, ____,  ____,   ____, ____,  ____, 
 (-|    (-|__| (-|_,    (-/     (-/_| (-(__  (-/     (-/_| (-|  \ (-|_,  
  _|,    _|  |, _|__,    _\__,  _/  |, ____)  _\__,  _/  |, _|__/  _|__,    
+
+
 -->
+
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
-
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 		<meta name="generator" content="{{ eleventy.generator }}">
-
 		{#-
 		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
 		1. You can add to them using `{% css %}`
@@ -23,7 +26,6 @@ ____,  __, _, ____,    ____,   ____, ____,  ____,   ____, ____,  ____,
 		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
 		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
 		#}
-
 		{#- Add an arbitrary string to the bundle #}
 		{%- css %}* { box-sizing: border-box; }{% endcss %}
 		{#- Add the contents of a file to the bundle #}
@@ -116,13 +118,13 @@ ____,  __, _, ____,    ____,   ____, ____,  ____,   ____, ____,  ____,
 						<h3 class="sidebar-heading">About</h3>
 						<p>
 							The Cascade is a <a href="/membership">member supported</a> blog
-							about the past, present, and future of CSS.
+							by <a href="https://robinrendle.com">Robin Rendle</a> about the past, present, and future of CSS.
 						</p>
 					</div>
 					<div class="entries">
 						<h3 class="sidebar-heading">Table of Contents</h3>
 						<div class="entries-list">
-							{%- for post in posts %}
+							{%- for post in collections.posts %}
 								<a href="{{ post.url }}">{{ post.data.title }}</a>
 							{%- endfor %}
 						</div>
