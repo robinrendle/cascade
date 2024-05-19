@@ -71,6 +71,11 @@ body {
 	margin-bottom: 2rem;
 }
 
+.sidebar-about nav {
+	display: flex;
+	gap: 20px;
+}
+
 .sidebar-wrapper {
 	padding: var(--padding-sidebar);
 }

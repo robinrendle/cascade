@@ -97,15 +97,6 @@ ____,  __, _, ____,    ____,   ____, ____,  ____,   ____, ____,  ____,
 						fill="currentColor"/>
 				</svg>
 			</a>
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			{# <nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-			</nav> #}
 		</header>
 
 		<div class="container grid">
@@ -120,6 +111,14 @@ ____,  __, _, ____,    ____,   ____, ____,  ____,   ____, ____,  ____,
 							The Cascade is a <a href="/membership">member supported</a> blog
 						 about the past, present, and future of CSS by <a href="https://robinrendle.com">Robin Rendle</a>.
 						</p>
+					</div>
+					<div class="sidebar-about">
+						<h3 class="sidebar-heading">Lurk Along</h3>
+						<nav>
+							<a href="/feed.xml">RSS</a></li>
+							<a href="https://buttondown.email/cascade">Newsletter</a>
+							<a href="https://mastodon.social/@csscade">@csscade</a>
+						</nav>
 					</div>
 					<div class="entries">
 						<h3 class="sidebar-heading">Table of Contents</h3>
