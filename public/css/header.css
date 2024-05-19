@@ -24,4 +24,9 @@
 	max-width: 100%;
 	width: 100%;
 	color: var(--color-logo);
+	transition: all 7s ease-in;
+}
+
+.header-logo:hover {
+	transform: scale(10);
 }
