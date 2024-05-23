@@ -3,6 +3,11 @@ content:
     label: Blog
     path: content/blog
     type: collection
+    fields: 
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: body, label: Body, type: rich-text }
+      - { name: draft, label: Draft, type: boolean }
 media:
   input: public/img
   output: /public/img
