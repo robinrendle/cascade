@@ -1,0 +1,8 @@
+content:
+  - name: blog
+    label: Blog
+    path: content/blog
+    type: collection
+media:
+  input: public/img
+  output: /public/img
