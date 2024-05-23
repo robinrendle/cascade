@@ -12,4 +12,4 @@ content:
       - { name: body, label: Body, type: rich-text }
 media:
   input: public/img
-  output: /public/img
+  output: /img
