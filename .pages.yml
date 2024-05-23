@@ -2,6 +2,8 @@ content:
   - name: blog
     label: Blog
     path: content/blog
+    view: 
+      fields: [ title, date ] 
     type: collection
     fields: 
       - { name: title, label: Title, type: string }
