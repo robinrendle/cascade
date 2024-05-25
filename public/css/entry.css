@@ -49,7 +49,7 @@
 }
 
 .entry *:not(.entry-footer, .entry-footer li, .entry-footer a) {
-	max-width: 600px;
+	max-width: 35rem;
 	margin-left: auto;
 	margin-right: auto;
 }
