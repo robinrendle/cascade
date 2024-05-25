@@ -87,7 +87,7 @@
 .entry ol,
 .entry blockquote {
 	font-size: var(--font-size-text);
-	line-height: 1.5;
+	line-height: var(--line-height);
 }
 
 .entry-header {
