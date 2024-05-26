@@ -5,3 +5,7 @@
 [[redirects]]
   from = "/feed.rss"
   to = "/feed.xml"
+
+[[redirects]]
+  from = "/why-membership"
+  to = "/membership"
