@@ -2,8 +2,9 @@
 	--color-highlight: hsl(337, 68%, 78%);
 	--color-highlight-dark: hsl(337, 68%, 68%);
 	--color-page-bg: hsl(214, 74%, 52%);
-	--color-logo: hsl(29, 100%, 77%);
-	--color-sidebar: hsl(28, 32%, 91%);
+	--color-page-dark: hsl(214deg 67.73% 32.76%);
+	--color-logo: white;
+	--color-sidebar: var(--color-page-bg);
 	--color-post-bg: hsl(0, 0%, 100%);
 	--color-inverted-text: hsl(0, 0%, 100%);
 	--color-text: hsl(0, 0%, 13%);
@@ -11,8 +12,8 @@
 	--color-subtext: hsl(0, 0%, 20%);
 	--color-lighttext: hsl(0, 0%, 80%);
 	--color-code-block-bg: hsl(0, 0%, 96%);
-	--border-page: 3px solid var(--color-sidebar);
-	--border-ui: 1px solid var(--color-text);
+	--border-page: 3px solid var(--color-page-dark);
+	--border-ui: 2px solid var(--color-text);
 	--line-height: 1.55;
 	--font-size-text: clamp(1.05rem, 3vw, 1.15rem);
 	--font-size-title: clamp(1.6rem, 3vw, 1.7rem);
@@ -25,8 +26,8 @@
 	--font-subheading: "GT Maru Bold", var(--font-fallback);
 	--font-code: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
 		"DejaVu Sans Mono", monospace;
-	--columns-sidebar: 9/13;
-	--columns-main: 1/9;
+	--columns-sidebar: 1/5;
+	--columns-main: 5/13;
 	--padding-main: 40px 10px 50px;
 	--padding-sidebar: 10px 10px;
 	--btn-radius: 10px;
@@ -35,15 +36,16 @@
 
 @media screen and (min-width: 800px) {
 	:root {
-		--border-page: 9px solid var(--color-page-bg);
+		--border-page: 9px solid var(--color-page-dark);
 		--padding-main: 30px 30px 50px;
 		--padding-sidebar: 25px 25px;
-		--header-height: 128px;
+		--header-height: 0;
+		--color-logo: white;
 	}
 }
 
 @media screen and (min-width: 1000px) {
 	:root {
-		--padding-main: 40px 40px 50px;
+		--padding-main: 60px 40px 60px;
 	}
 }

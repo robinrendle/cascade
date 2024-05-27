@@ -5,6 +5,11 @@
 	border-top: var(--border-ui);
 }
 
+.entry img,
+.entry iframe {
+	max-width: 100% !important;
+}
+
 .entry-intro {
 	padding-bottom: 15px;
 	border-bottom: var(--border-ui);

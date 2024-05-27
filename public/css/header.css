@@ -19,14 +19,17 @@
 	background: var(--color-page-bg);
 }
 
-.header-logo {
-	min-width: 600px;
-	max-width: 100%;
-	width: 100%;
-	color: var(--color-logo);
-	transition: all 7s ease-in;
+@media screen and (min-width: 800px) {
+	.header {
+		background: var(--color-page-dark);
+	}
 }
 
-.header-logo:hover {
-	transform: scale(10);
+.header-logo {
+	min-width: 100%;
+	max-width: 100%;
+	margin-bottom: 10px;
+	width: 100%;
+	color: var(--color-logo);
+	transition: all 0.2s ease-in;
 }
