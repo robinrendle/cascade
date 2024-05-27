@@ -185,7 +185,7 @@ blockquote > *:only-child {
 	display: block;
 	width: 100%;
 	padding: 10px;
-	background: var(--color-page-bg);
+	background: var(--color-highlight);
 	color: var(--color-inverted-text);
 	text-align: center;
 	text-decoration: none;
