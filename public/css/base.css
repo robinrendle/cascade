@@ -90,7 +90,7 @@ body {
 	flex-direction: column;
 	padding: var(--padding-sidebar);
 	justify-content: space-between;
-	height: 95dvh;
+	height: 96.5dvh;
 }
 
 @media screen and (min-width: 800px) {
