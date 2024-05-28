@@ -18,7 +18,6 @@ ____,  __, _, ____,    ____,   ____, ____,  ____,   ____, ____,  ____,
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed.json" type="application/json" title="{{ metadata.title }}">
-		<meta name="generator" content="{{ eleventy.generator }}">
 		{#-
 		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
 		1. You can add to them using `{% css %}`
@@ -45,18 +44,24 @@ ____,  __, _, ____,    ____,   ____, ____,  ____,   ____, ____,  ____,
 		<style>{% getBundle "css" %}</style>
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
-
 		<meta name="view-transition" content="same-origin" />
-		<meta property="og:image:width" content="1200"> 
-		<meta property="og:image:height" content="630">
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta property="twitter:domain" content="csscade.com" />
-		<meta property="twitter:url" content="https://www.csscade.com" />
-		<meta name="twitter:title" content="The Cascade" />
-		<meta
-			name="twitter:description"
-			content="The Cascade is a member-supported blog about the past, present, and future of CSS."
-		/>
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:url" content="https://csscade.com">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="The Cascade">
+		<meta property="og:description" content="A website about the past, present, and future of CSS.">
+		<meta property="og:image" content="https://www.csscade.com/favicon/cascade.jpg">
+		<meta property="og:image:width" content="2400">
+		<meta property="og:image:height" content="1260">
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="twitter:domain" content="csscade.com">
+		<meta property="twitter:url" content="https://csscade.com">
+		<meta name="twitter:title" content="The Cascade">
+		<meta name="twitter:description" content="A website about the past, present, and future of CSS.">
+		<meta name="twitter:image" content="https://www.csscade.com/favicon/cascade.jpg">
+
 		<meta
 			name="twitter:image"
 			content="https://www.csscade.com/favicon/cascade.jpg"
