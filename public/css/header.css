@@ -10,19 +10,12 @@
 	display: flex;
 	border: 0;
 	height: var(--header-height);
-	position: fixed;
+	background: var(--color-sidebar);
 	top: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
 	z-index: -1;
-	background: var(--color-page-bg);
-}
-
-@media screen and (min-width: 800px) {
-	.header {
-		background: var(--color-page-dark);
-	}
 }
 
 .header-logo {

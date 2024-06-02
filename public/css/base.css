@@ -59,7 +59,8 @@ body {
 	font-weight: bold;
 	color: var(--color-inverted-text);
 	margin-top: 0;
-	font-size: 125%;
+	font-size: 140%;
+	line-height: 1.3;
 }
 
 .sidebar p a {
@@ -231,26 +232,38 @@ h2:hover .header-anchor {
 	text-decoration: none;
 }
 
+.main-nav {
+	display: flex;
+	margin-bottom: 20px;
+
+	a {
+		text-decoration: none;
+		color: var(--color-inverted-text);
+	}
+}
+
 .lurk-links {
 	display: flex;
-	gap: 5px !important;
+	width: 100%;
+	gap: 2px !important;
 	position: relative;
 	left: -10px;
 	margin-top: 30px;
-	color: var(--color-inverted-text);
 }
 
-.lurk-links a {
+.link {
+	color: var(--color-inverted-text-light);
 	text-decoration: none;
 	display: flex;
 	align-items: center;
 	gap: 8px;
+	width: 100%;
 	border-radius: 6px;
 	padding: 5px 10px;
 }
 
-.lurk-links a:hover,
-.lurk-links a:focus {
+.link:hover,
+.link:focus {
 	background: hsla(0, 0%, 10%, 10%);
 }
 
@@ -276,4 +289,13 @@ h2:hover .header-anchor {
 input[type="submit"] {
 	background: hsla(0, 0%, 10%, 30%);
 	color: var(--color-inverted-text);
+}
+
+.cascade-logo {
+	display: block;
+}
+
+.cascade-logo svg {
+	max-width: 150px;
+	max-height: 150px;
 }

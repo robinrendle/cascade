@@ -29,5 +29,5 @@
 .container {
 	z-index: 1;
 	border-top: var(--border-ui);
-	margin-top: calc(var(--header-height) - 10px);
+	/* margin-top: calc(var(--header-height) - 10px); */
 }

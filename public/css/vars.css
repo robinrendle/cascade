@@ -7,6 +7,7 @@
 	--color-sidebar: var(--color-page-bg);
 	--color-post-bg: hsl(0, 0%, 100%);
 	--color-inverted-text: hsl(0, 0%, 100%);
+	--color-inverted-text-light: hsl(0, 0%, 95%);
 	--color-text: hsl(0, 0%, 13%);
 	--color-sidebar-dark: hsl(31, 30%, 80%);
 	--color-subtext: hsl(0, 0%, 20%);
@@ -37,15 +38,9 @@
 @media screen and (min-width: 800px) {
 	:root {
 		--border-page: 9px solid var(--color-page-dark);
-		--padding-main: 30px 30px 50px;
+		--padding-main: 60px 40px 60px;
 		--padding-sidebar: 25px 25px;
 		--header-height: 0;
 		--color-logo: white;
-	}
-}
-
-@media screen and (min-width: 1000px) {
-	:root {
-		--padding-main: 60px 40px 60px;
 	}
 }
