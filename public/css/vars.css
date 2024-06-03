@@ -32,15 +32,15 @@
 	--padding-main: 40px 10px 50px;
 	--padding-sidebar: 10px 10px;
 	--btn-radius: 10px;
-	--header-height: 88px;
-}
 
-@media screen and (min-width: 800px) {
-	:root {
+	@media screen and (min-width: 500px) {
+		--padding-main: 40px 20px 50px;
+	}
+
+	@media screen and (min-width: 800px) {
 		--border-page: 9px solid var(--color-page-dark);
 		--padding-main: 60px 40px 60px;
 		--padding-sidebar: 25px 25px;
-		--header-height: 0;
 		--color-logo: white;
 	}
 }
