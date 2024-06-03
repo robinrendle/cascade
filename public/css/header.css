@@ -71,6 +71,8 @@
 	}
 
 	@media screen and (min-width: 800px) {
+		position: relative;
+		left: -10px;
 		width: 150px;
 		height: 150px;
 	}
