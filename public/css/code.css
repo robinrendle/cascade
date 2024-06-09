@@ -7,11 +7,6 @@ code {
 	border-radius: 3px;
 }
 
-pre code {
-	text-wrap: nowrap !important;
-	overflow-x: scroll !important;
-}
-
 p code {
 	line-height: 1em;
 	padding: 2px;
@@ -21,11 +16,12 @@ p code {
 }
 
 pre code {
+	text-wrap: nowrap !important;
+	overflow-x: scroll !important;
 	display: block;
 	padding: 10px 10px;
 	margin: 0 0 0 0;
 	background-color: var(--color-code-block-bg);
-	display: block;
 	white-space: pre-wrap;
 }
 

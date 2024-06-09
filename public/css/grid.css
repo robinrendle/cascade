@@ -21,6 +21,7 @@
 	.main {
 		grid-column: var(--columns-main);
 		min-height: 100vh;
+		contain: inline-size;
 	}
 
 	.container .main {
