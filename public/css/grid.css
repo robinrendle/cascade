@@ -1,6 +1,6 @@
 .grid {
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(4, minmax(auto, 80px)) repeat(7, auto);
 }
 
 @media screen and (min-width: 800px) {
@@ -29,5 +29,4 @@
 .container {
 	z-index: 1;
 	border-top: var(--border-ui);
-	/* margin-top: calc(var(--header-height) - 10px); */
 }

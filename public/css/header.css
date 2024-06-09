@@ -57,8 +57,8 @@
 }
 
 .cascade-logo svg {
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 
 	.menu-open & {
 		top: -10px;
