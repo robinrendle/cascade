@@ -46,12 +46,12 @@
 			display: block;
 			position: absolute;
 			right: 10px;
-			top: 18px;
+			top: 8px;
 
-			@media screen and (min-width: 500px) {
+			/* @media screen and (min-width: 500px) {
 				right: 20px;
 				top: 18px;
-			}
+			} */
 		}
 	}
 }
@@ -62,12 +62,12 @@
 
 	.menu-open & {
 		top: -10px;
-		left: 0;
+		left: -10px;
 		position: relative;
 
-		@media screen and (min-width: 500px) {
+		/* @media screen and (min-width: 500px) {
 			left: 10px;
-		}
+		} */
 	}
 
 	@media screen and (min-width: 800px) {

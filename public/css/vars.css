@@ -29,8 +29,8 @@
 		"DejaVu Sans Mono", monospace;
 	--columns-sidebar: 1/5;
 	--columns-main: 5/13;
-	--padding-main: 40px 10px 50px;
-	--padding-sidebar: 10px 10px;
+	--padding-main: 40px 20px 50px;
+	--padding-sidebar: 10px 20px;
 	--btn-radius: 10px;
 
 	@media screen and (min-width: 500px) {

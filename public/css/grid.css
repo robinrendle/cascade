@@ -1,6 +1,10 @@
 .grid {
 	display: grid;
-	grid-template-columns: repeat(4, minmax(auto, 80px)) repeat(7, auto);
+	grid-template-columns: repeat(12, 1fr);
+
+	@media screen and (min-width: 800px) {
+		grid-template-columns: repeat(4, minmax(auto, 80px)) repeat(7, auto);
+	}
 }
 
 @media screen and (min-width: 800px) {
