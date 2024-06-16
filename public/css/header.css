@@ -94,7 +94,6 @@ menu-btn button {
 	position: fixed;
 	height: calc(100dvh - 80px);
 	background: rgba(255,255,255,0.4);
-	backdrop-filter: blur(60px);
 	z-index: 999;
 	left: 0;
 	right: 0;
@@ -103,6 +102,8 @@ menu-btn button {
 	width: 100%;
 	overflow: scroll;
 	animation: 250ms roll-out linear forwards;
+	-webkit-backdrop-filter: blur(60px);
+	backdrop-filter: blur(60px);
 
 	@media screen and (min-width: 500px) {
 		top: 80px;
