@@ -59,6 +59,7 @@ menu-btn {
 	}
 }
 
+.menu-open menu-btn,
 menu-btn:hover,
 menu-btn:focus {
 	background: hsla(0, 0%, 10%, 10%);
