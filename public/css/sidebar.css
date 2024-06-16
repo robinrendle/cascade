@@ -25,6 +25,7 @@
 }
 
 .menu-open {
+	overflow: hidden;
 	.sidebar {
 		display: block;
 		position: absolute;

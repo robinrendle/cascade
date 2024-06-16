@@ -18,3 +18,10 @@
 	font-style: normal;
 	font-weight: 600;
 }
+
+@font-face {
+	font-family: "GT Maru Mega Midi Glow";
+	src: url("/fonts/GT-Maru-Mega-Midi-Glow.woff2");
+	font-style: normal;
+	font-weight: 600;
+}

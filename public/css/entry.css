@@ -2,8 +2,21 @@
 	background: var(--color-post-bg);
 	padding: var(--padding-main);
 	position: relative;
-	border-top: var(--border-ui);
+	border-radius: 20px;
+  max-width: var(--entry-max-width);
+  border: var(--border-ui);
+	margin: 0 auto;
+	max-width: 95dvw;
+
+  @media screen and (min-width: 800px) {
+   min-width: var(--entry-max-width);
+   overflow: scroll;
+   margin-bottom: 0;
+   height: max-content;
+   max-height: 78dvh;
+  }
 }
+
 
 .entry img,
 .entry iframe {
@@ -13,20 +26,6 @@
 .entry-intro {
 	padding-bottom: 15px;
 	border-bottom: var(--border-ui);
-}
-
-.entry:first-of-type {
-	border-top: none;
-}
-
-@media screen and (min-width: 800px) {
-	.entry {
-		margin-bottom: 0;
-	}
-}
-
-.entry:last-child {
-	margin: 0;
 }
 
 .entry a {
@@ -96,7 +95,7 @@
 }
 
 .entry-header {
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 }
 
 .entry-header .h1 {

@@ -2,8 +2,7 @@
 	overflow: hidden;
 	display: flex;
 	border: 0;
-	height: var(--header-height);
-	background: var(--color-sidebar);
+	background: var(--color-page-bg);
 	top: 0;
 	left: 0;
 	right: 0;
@@ -11,19 +10,15 @@
 	z-index: -1;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 10px;
+	padding: 10px 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 	@media screen and (min-width: 500px) {
-		padding: 0 20px;
-	}
-
-	@media screen and (min-width: 800px) {
-		height: 0;
+		padding: 10px 20px;
 	}
 }
 
 .header a {
-	display: block;
 	display: flex;
 }
 
@@ -40,41 +35,14 @@
 	display: block;
 }
 
-.menu-open {
-	.sidebar {
-		menu-btn {
-			display: block;
-			position: absolute;
-			right: 10px;
-			top: 8px;
-
-			/* @media screen and (min-width: 500px) {
-				right: 20px;
-				top: 18px;
-			} */
-		}
-	}
-}
-
 .cascade-logo svg {
 	width: 60px;
 	height: 60px;
 
-	.menu-open & {
-		top: -10px;
-		left: -10px;
-		position: relative;
-
-		/* @media screen and (min-width: 500px) {
-			left: 10px;
-		} */
-	}
-
 	@media screen and (min-width: 800px) {
 		position: relative;
-		left: -10px;
-		width: 150px;
-		height: 150px;
+		width: 60px;
+		height: 60px;
 	}
 }
 
@@ -112,4 +80,79 @@ menu-btn button {
 		width: 30px;
 		height: 30px;
 	}
+}
+
+.menu-open .popover-menu {
+	display: block;
+	animation: 250ms roll-in ease-in-out forwards;
+}
+
+.popover-menu {
+	display: none;
+	z-index: 999;
+	position: fixed;
+	height: calc(100dvh - 80px);
+	background: rgba(255,255,255,0.4);
+	backdrop-filter: blur(60px);
+	z-index: 999;
+	left: 0;
+	right: 0;
+	top: 60px;
+	bottom: 0;
+	width: 100%;
+	overflow: scroll;
+	animation: 250ms roll-out linear forwards;
+
+	@media screen and (min-width: 500px) {
+		top: 80px;
+	}
+}
+
+/* I cannot wait for animating display: none to ship  */
+@keyframes roll-in {
+	from {
+		top: 100dvh;
+		opacity: 0;
+	} to {
+		opacity: 1;
+		top: 80px;
+	}
+}
+
+@keyframes roll-out {
+	0% {
+		display: block;
+		opacity: 1;
+		top: 80px;
+	} 100% {
+		top: 100dvh;
+		opacity: 0;
+	}
+}
+
+.popover-menu .intro {
+	font-size: clamp(3rem, 6vw, 5rem);
+	font-family: var(--font-display);
+	color: var(--color-page-bg);
+	line-height: 1;
+	max-width: 100%;
+	padding-bottom: 2rem;
+	/* border-bottom: 5px solid white; */
+}
+
+.popover-menu-wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.popover-menu-wrapper p {
+	/* font-weight: 600; */
+	font-size: clamp(1.4rem, 3vw, 1.7rem);
+	max-width: 700px;
+	line-height: 1.35;
+}
+
+.menu-open .popover-menu {
+	display: block;
 }

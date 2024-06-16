@@ -13,25 +13,12 @@
 	}
 }
 
-.main {
-	grid-column: 1/13;
-}
-
 @media screen and (min-width: 800px) {
 	.main {
-		grid-column: var(--columns-main);
-		min-height: 100vh;
-		contain: inline-size;
-	}
-
-	.container .main {
-		border-left: var(--border-ui);
-		border-right: var(--border-ui);
 		padding-bottom: 0;
 	}
 }
 
 .container {
 	z-index: 1;
-	border-top: var(--border-ui);
 }
