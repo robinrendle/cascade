@@ -85,7 +85,7 @@ menu-btn button {
 
 .menu-open .popover-menu {
 	display: block;
-	animation: 250ms roll-in ease-in-out forwards;
+	animation: 250ms roll-in linear forwards;
 }
 
 .popover-menu {
@@ -101,7 +101,7 @@ menu-btn button {
 	bottom: 0;
 	width: 100%;
 	overflow: scroll;
-	animation: 250ms roll-out linear forwards;
+	animation: 400ms roll-out ease-out forwards;
 	-webkit-backdrop-filter: blur(60px);
 	backdrop-filter: blur(60px);
 
@@ -114,7 +114,7 @@ menu-btn button {
 @keyframes roll-in {
 	from {
 		top: 100dvh;
-		opacity: 0;
+		opacity: 1;
 	} to {
 		opacity: 1;
 		top: 80px;
@@ -128,7 +128,7 @@ menu-btn button {
 		top: 80px;
 	} 100% {
 		top: 100dvh;
-		opacity: 0;
+		opacity: 1;
 	}
 }
 
@@ -139,7 +139,6 @@ menu-btn button {
 	line-height: 1;
 	max-width: 100%;
 	padding-bottom: 2rem;
-	/* border-bottom: 5px solid white; */
 }
 
 .popover-menu-wrapper {
@@ -149,7 +148,6 @@ menu-btn button {
 }
 
 .popover-menu-wrapper p {
-	/* font-weight: 600; */
 	font-size: clamp(1.4rem, 3vw, 1.7rem);
 	max-width: 700px;
 	line-height: 1.35;
