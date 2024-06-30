@@ -100,7 +100,7 @@ menu-btn button {
 	top: 60px;
 	bottom: 0;
 	width: 100%;
-	overflow: scroll;
+	overflow: auto;
 	animation: 400ms roll-out ease-out forwards;
 	-webkit-backdrop-filter: blur(60px);
 	backdrop-filter: blur(60px);
