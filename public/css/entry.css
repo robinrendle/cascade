@@ -10,7 +10,7 @@
 
   @media screen and (min-width: 800px) {
    min-width: var(--entry-max-width);
-   overflow: scroll;
+   overflow: auto;
    margin-bottom: 0;
    height: max-content;
    max-height: 78dvh;
