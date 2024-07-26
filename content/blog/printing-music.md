@@ -2,7 +2,7 @@
 title: Printing Music with CSS Grid
 date: 2024-04-28
 tags:
-  - css grid
+  - grid
   - music notation
 ---
 

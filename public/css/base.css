@@ -4,7 +4,7 @@ html {
 
 body {
 	font-size: 100%;
-	color: var(----color-text);
+	color: var(--color-text);
 	font-family: var(--font-fallback);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

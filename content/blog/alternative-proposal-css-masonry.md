@@ -3,7 +3,7 @@ title: An alternative proposal for CSS masonry
 date: 2024-05-02
 tags:
   - masonry
-  - css grid
+  - grid
   - rachel andrew
 ---
 

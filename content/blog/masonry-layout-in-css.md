@@ -4,7 +4,7 @@ date: 2024-04-20
 tags:
   - masonry
   - layouts
-  - css grid
+  - grid
   - jen simmons
 ---
 
