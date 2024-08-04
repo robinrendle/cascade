@@ -18,9 +18,15 @@
 }
 
 
-.entry img,
-.entry iframe {
+.entry img {
 	max-width: 100% !important;
+}
+
+.entry iframe {
+	margin-left: auto;
+	margin-right: auto;
+	margin-block-start: 25px;
+	display: block;
 }
 
 .entry-intro {
@@ -57,12 +63,6 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-
-/* @media screen and (max-width: 800px) {
-	.entry-full {
-		height: 100dvh;
-	}
-} */
 
 .entry h1,
 .entry .h1 {
