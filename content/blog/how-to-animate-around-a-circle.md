@@ -10,10 +10,10 @@ The other day I wanted to make a CSS animation where an object would rotate arou
 ```css
 @keyframes circle {
   0%{
-	  transform: rotate(0deg);
+    transform: rotate(0deg);
   } 100% {
-		transform: rotate(360deg);
-	}
+    transform: rotate(360deg);
+  }
 }
 ```
 
