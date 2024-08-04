@@ -14,7 +14,7 @@
 	--color-lighttext: hsl(0, 0%, 80%);
 	--color-code-block-bg: hsl(0, 0%, 96%);
 	--border-page: 3px solid var(--color-page-dark);
-	--border-ui: 2px solid var(--color-text);
+	--border-ui: 2px solid rgba(255,255,255,0.1);
 	--line-height: 1.5;
 	--font-size-text: clamp(1.05rem, 3vw, 1.15rem);
 	--font-size-title: clamp(1.6rem, 3vw, 1.7rem);

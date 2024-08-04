@@ -41,8 +41,8 @@
 
 	@media screen and (min-width: 800px) {
 		position: relative;
-		width: 60px;
-		height: 60px;
+		width: 100px;
+		height: 100px;
 	}
 }
 
@@ -106,7 +106,7 @@ menu-btn button {
 	backdrop-filter: blur(60px);
 
 	@media screen and (min-width: 500px) {
-		top: 80px;
+		top: 100px;
 	}
 }
 
@@ -117,7 +117,7 @@ menu-btn button {
 		opacity: 1;
 	} to {
 		opacity: 1;
-		top: 80px;
+		top: 120px;
 	}
 }
 
@@ -148,7 +148,7 @@ menu-btn button {
 }
 
 .popover-menu-wrapper p {
-	font-size: clamp(1.4rem, 3vw, 1.7rem);
+	font-size: clamp(1.4rem, 3vw, 1.5rem);
 	max-width: 700px;
 	line-height: 1.35;
 }

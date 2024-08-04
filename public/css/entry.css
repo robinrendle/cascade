@@ -4,9 +4,9 @@
 	position: relative;
 	border-radius: 20px;
   max-width: var(--entry-max-width);
-  border: var(--border-ui);
 	margin: 0 auto;
 	max-width: 95dvw;
+	outline: 2px solid rgba(255,255, 255,0.3);
 
   @media screen and (min-width: 800px) {
    min-width: var(--entry-max-width);
@@ -16,7 +16,6 @@
    max-height: 78dvh;
   }
 }
-
 
 .entry img {
 	max-width: 100% !important;
