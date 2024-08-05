@@ -8,7 +8,7 @@ tags:
 
 This doesn’t have much to do with CSS, but this new feature by Framer called [Fetch](https://www.youtube.com/watch?v=dd8A90dKYKc) caught my eye:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dd8A90dKYKc?si=3Urs9pX-zEkBTcjN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<lite-youtube videoid="dd8A90dKYKc"></lite-youtube>
 
 The reason why I mention this is because it shows a snapshot of what the future of web design tools might be: they’re not just going to allow you to draw pixels on a canvas, but allow you to build real, interactive software that pings a database.
 

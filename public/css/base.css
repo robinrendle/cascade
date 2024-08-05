@@ -35,7 +35,7 @@ body {
   @media screen and (min-width: 800px) {
     height: calc(100dvh - 80px);
 		flex-direction: row;
-    padding-top: 20px;
+    padding-top: 5px;
     padding-left: 40px;
     padding-right: 40px;
 		padding-bottom: 0;
